@@ -9,7 +9,7 @@ const PHONE = '062-357-5698'
 const ui = {
   education: { en: 'Education', th: 'การศึกษา' },
   experience: { en: 'Experience', th: 'ประสบการณ์ทำงาน' },
-  projects:   { en: 'Projects',  th: 'โปรเจค' },
+  projects:   { en: 'Projects',  th: 'โปรเจ็ค' },
   skills:     { en: 'Skills',    th: 'ทักษะ' },
   languages:  { en: 'Languages', th: 'ภาษา' },
   contract:   { en: '6-Month Contract', th: 'สัญญาจ้าง 6 เดือน' },
@@ -100,7 +100,8 @@ const projects = [
       en: 'A web application built with Next.js to monitor and track the performance metrics of small businesses.',
       th: 'เว็บไซต์ที่พัฒนาด้วย Next.js เพื่อติดตามผลการดำเนินงานของธุรกิจขนาดเล็ก',
     },
-    image:  '/assets/Dashboard_website_photo.webp',
+    image:    '/assets/Screenshot_Dashboard.png',
+    objectPos: 'center top',
     github: 'https://github.com/Supachok-y/shop_dashboard_web',
   },
   {
@@ -110,7 +111,8 @@ const projects = [
       en: 'An Android application built with React Native for tracking personal finances via SMS, designed specifically for elderly users.',
       th: 'แอปพลิเคชัน Android สำหรับการติดตามการเงินผ่าน SMS สำหรับผู้สูงอายุ',
     },
-    image:  '/assets/money_track_photo.png',
+    image:    '/assets/Screenshot_MoneyTrack.png',
+    objectPos: 'center 18%',
     github: 'https://github.com/Supachok-y/MoneyTrack',
   },
 ]
@@ -130,13 +132,13 @@ const skillsLabel = {
 const langs = [
   {
     name:    { en: 'Thai',    th: 'ภาษาไทย' },
-    reading: { en: 'Native',  th: 'Native' },
-    speaking:{ en: 'Native',  th: 'Native' },
+    reading: { en: 'Native',  th: 'เจ้าของภาษา' },
+    speaking:{ en: 'Native',  th: 'เจ้าของภาษา' },
   },
   {
     name:    { en: 'English', th: 'ภาษาอังกฤษ' },
-    reading: { en: 'Intermediate', th: 'Intermediate' },
-    speaking:{ en: 'Elementary',   th: 'Elementary' },
+    reading: { en: 'Intermediate', th: 'พื้นฐาน' },
+    speaking:{ en: 'Elementary',   th: 'พื้นฐาน' },
   },
 ]
 
@@ -231,8 +233,8 @@ export default function App() {
               {lang === 'en' ? 'Supachok Yotphet' : 'ศุภโชค ยอดเพ็ชร'}
             </h1>
             <p className="text-slate-500 text-sm mt-0.5">
-              {lang === 'en' ? 'ศุภโชค ยอดเพ็ชร' : 'Supachok Yotphet'}
-              &nbsp;·&nbsp;
+              {lang === 'en' ? 'Nick name :' : 'ชื่อเล่น :'}
+              &nbsp; &nbsp;
               {lang === 'en' ? 'Kong' : 'ก้อง'}
             </p>
             <p className="text-slate-500 text-sm mt-1">
@@ -321,7 +323,7 @@ export default function App() {
                   rel="noopener noreferrer"
                   className="block overflow-hidden rounded-lg border border-slate-200 hover:border-slate-300 transition-colors mb-3"
                 >
-                  <img src={proj.image} alt={proj.title} className="w-full h-48 object-cover object-top" />
+                  <img src={proj.image} alt={proj.title} className="w-full h-52 object-cover" style={{ objectPosition: proj.objectPos }} />
                 </a>
                 <div className="flex items-center justify-between gap-2 mb-1">
                   <h3 className="font-semibold text-slate-800">{proj.title}</h3>
