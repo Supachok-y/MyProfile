@@ -5,9 +5,9 @@ const ui = {
 }
 
 const skills = {
-  'Languages':              ['JavaScript', 'TypeScript (Beginner)', 'Java (Beginner)', 'SQL', 'PostgreSQL', 'HTML', 'CSS'],
+  'Languages':              ['JavaScript (ES6)', 'TypeScript', 'Java (Beginner)', 'SQL', 'PostgreSQL', 'HTML', 'CSS'],
   'Frameworks & Libraries': ['React', 'React Native', 'Next.js', 'TailwindCSS', 'Express', 'Prisma', 'Zod', 'JWT'],
-  'Tools':                  ['VSCode', 'Git', 'DBeaver', 'Android Studio', 'Claude Code', 'Postman', 'Vercel'],
+  'Tools':                  ['VSCode', 'Git', 'DBeaver', 'Android Studio', 'Ai Tools (CLI)', 'Postman', 'Vercel'],
 }
 
 const skillsLabel = {

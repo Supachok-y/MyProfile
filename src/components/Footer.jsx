@@ -4,7 +4,7 @@ const GITHUB = 'https://github.com/Supachok-y'
 
 export default function Footer() {
   return (
-    <footer className="p-6 mb-4text-center text-slate-400 text-sm space-y-1">
+    <footer className="p-6 mb-4 text-center text-slate-400 text-sm space-y-1">
       <p>
         <a href={`mailto:${EMAIL}`} className="hover:text-slate-600 transition-colors">{EMAIL}</a>
         &nbsp;·&nbsp;

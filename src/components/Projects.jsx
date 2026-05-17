@@ -14,7 +14,7 @@ const projects = [
       en: 'A web application built with Next.js to monitor and track the performance metrics of small businesses.',
       th: 'เว็บไซต์ที่พัฒนาด้วย Next.js เพื่อติดตามผลการดำเนินงานของธุรกิจขนาดเล็ก',
     },
-    image:    '/assets/Screenshot_Dashboard.png',
+    image:    '/assets/projects/Screenshot_Dashboard.png',
     objectPos: 'center top',
     github: 'https://github.com/Supachok-y/shop_dashboard_web',
   },
@@ -25,7 +25,7 @@ const projects = [
       en: 'An Android application built with React Native for tracking personal finances via SMS, designed specifically for elderly users.',
       th: 'แอปพลิเคชัน Android สำหรับการติดตามการเงินผ่าน SMS สำหรับผู้สูงอายุ',
     },
-    image:    '/assets/Screenshot_MoneyTrack.png',
+    image:    '/assets/projects/Screenshot_MoneyTrack.png',
     objectPos: 'center 18%',
     github: 'https://github.com/Supachok-y/MoneyTrack',
   },
@@ -35,7 +35,7 @@ export default function Projects({ lang }) {
   const t = (obj) => obj[lang] ?? obj.en
 
   return (
-    <section>
+    <section className="p-6 mb-4">
       <SectionLabel>{t(ui.projects)}</SectionLabel>
       <div className="space-y-10">
         {projects.map((proj) => (

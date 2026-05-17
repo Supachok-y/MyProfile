@@ -7,13 +7,13 @@ const ui = {
 const langs = [
   {
     name:    { en: 'Thai',    th: 'ภาษาไทย' },
-    reading: { en: 'Native',  th: 'เจ้าของภาษา' },
-    speaking:{ en: 'Native',  th: 'เจ้าของภาษา' },
+    reading: { en: 'reading : Native',  th: 'การอ่าน : เจ้าของภาษา' },
+    speaking:{ en: 'speaking : Native',  th: 'การพูด : เจ้าของภาษา' },
   },
   {
     name:    { en: 'English', th: 'ภาษาอังกฤษ' },
-    reading: { en: 'Intermediate', th: 'พื้นฐาน' },
-    speaking:{ en: 'Elementary',   th: 'พื้นฐาน' },
+    reading: { en: 'reading : Intermediate', th: 'การอ่าน : พื้นฐาน' },
+    speaking:{ en: 'speaking : Elementary',   th: 'การพูด : พื้นฐาน' },
   },
 ]
 

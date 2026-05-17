@@ -5,6 +5,7 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Languages from './components/Languages'
+import Certificates from './components/Certificates'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Skills lang={lang} />
         <Experience lang={lang} />
         <Projects lang={lang} />
+        <Certificates lang={lang} />
         <Footer />
       </main>
     </div>
