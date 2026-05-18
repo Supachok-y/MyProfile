@@ -1,9 +1,10 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useState, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, Center, OrbitControls, Stars } from '@react-three/drei'
 
 function CoinModel({ scrollProgress }) {
   const { scene } = useGLTF('/assets/models/coin.gltf')
+  const cloned = useMemo(() => scene.clone(true), [scene])
   const groupRef = useRef()
   const baseRotation = useRef(0)
 
@@ -17,7 +18,7 @@ function CoinModel({ scrollProgress }) {
   return (
     <group ref={groupRef}>
       <Center>
-        <primitive object={scene} scale={0.38} />
+        <primitive object={cloned} scale={0.38} />
       </Center>
     </group>
   )

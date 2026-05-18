@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import CoinBackground from '../components/three/CoinBackground'
 import Scene3D from '../components/three/Scene3D'
+import CoinDraggable from '../components/three/CoinDraggable'
 
 export default function Learn3dPage() {
   return (
@@ -12,6 +13,7 @@ export default function Learn3dPage() {
         </Link>
         <h1 className="mt-6 text-3xl font-bold text-gray-900">3D Learning</h1>
         <Scene3D />
+        <CoinDraggable />
 
         <section className="mt-12 pt-8 border-t border-gray-100">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-4">Credits</h2>
