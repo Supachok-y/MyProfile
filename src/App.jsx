@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Hero from './components/Hero'
+import CoinBackground from './components/CoinBackground'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
@@ -12,8 +13,9 @@ export default function App() {
   const [lang, setLang] = useState('en')
 
   return (
-    <div className="min-h-screen bg-white font-sans">
-      <main className="max-w-2xl mx-auto px-6 py-16">
+    <div className="min-h-screen bg-white font-sans" style={{ position: 'relative' }}>
+      <CoinBackground />
+      <main className="max-w-2xl mx-auto px-6 py-16" style={{ position: 'relative', zIndex: 1 }}>
         <Hero lang={lang} setLang={setLang} />
         <Education lang={lang} />
         <Languages lang={lang} />
