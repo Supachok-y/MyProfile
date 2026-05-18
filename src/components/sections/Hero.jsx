@@ -1,4 +1,4 @@
-import { IconEmail, IconGitHub, IconPhone, IconDownload } from './Icons'
+import { IconEmail, IconGitHub, IconPhone, IconDownload } from '../ui/Icons'
 
 const GITHUB = 'https://github.com/Supachok-y'
 const EMAIL = 'supachok.yotphet@gmail.com'

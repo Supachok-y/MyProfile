@@ -1,5 +1,5 @@
-import { SectionLabel } from './Shared'
-import { IconGitHub } from './Icons'
+import { SectionLabel } from '../ui/Shared'
+import { IconGitHub } from '../ui/Icons'
 
 const ui = {
   projects:   { en: 'Projects',        th: 'โปรเจ็ค' },

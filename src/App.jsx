@@ -1,30 +1,15 @@
-import { useState } from 'react'
-import Hero from './components/Hero'
-import CoinBackground from './components/CoinBackground'
-import Education from './components/Education'
-import Experience from './components/Experience'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import Languages from './components/Languages'
-import Certificates from './components/Certificates'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import Learn3dPage from './pages/Learn3dPage'
+import useLenis from './hooks/useLenis'
 
 export default function App() {
-  const [lang, setLang] = useState('en')
+  useLenis()
 
   return (
-    <div className="min-h-screen bg-white font-sans" style={{ position: 'relative' }}>
-      <CoinBackground />
-      <main className="max-w-2xl mx-auto px-6 py-16" style={{ position: 'relative', zIndex: 1 }}>
-        <Hero lang={lang} setLang={setLang} />
-        <Education lang={lang} />
-        <Languages lang={lang} />
-        <Skills lang={lang} />
-        <Experience lang={lang} />
-        <Projects lang={lang} />
-        <Certificates lang={lang} />
-        <Footer />
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/3d-learn" element={<Learn3dPage />} />
+    </Routes>
   )
 }

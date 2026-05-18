@@ -1,4 +1,4 @@
-import { SectionLabel } from './Shared'
+import { SectionLabel } from '../ui/Shared'
 
 const ui = {
   education: { en: 'Education', th: 'การศึกษา' },

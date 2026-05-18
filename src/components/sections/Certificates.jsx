@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SectionLabel } from './Shared'
+import { SectionLabel } from '../ui/Shared'
 
 const ui = {
   certificates: { en: 'Certificates', th: 'ใบรับรอง' },
